@@ -40,7 +40,7 @@ function aboutSection() {
           <h3>Your independent repair expert</h3>
           <p>Hi! I'm the owner and sole technician at CompuCare. I specialize in precise, affordable repairs and thoughtful upgrades across phones, laptops, tablets and more. Every device gets bench‑tested before and after service.</p>
           <p>Mission: <em>make tech last longer</em> with honest diagnostics and quality parts.</p>
-          <a href="#contact" class="btn">Get in touch</a>
+          <a href="#about" class="btn">Read More</a>
         </div>
       </div>
     </section>`;
