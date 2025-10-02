@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CompuCare Technical Services</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><div class="badge">🔧</div>CompuCare</div>
+      <nav class="links primary">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#cases">Case Studies</a>
+        <a href="#blog">Blog</a>
+        <a href="#about">About</a>
+        <a href="#find-us">Find Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="links">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">🌓</button>
+        <a class="btn small" href="tel:+15555551234">Call</a>
+        <a class="btn small green" href="https://wa.me/15555551234" target="_blank" rel="noopener">WhatsApp</a>
+        <button id="hamburger" class="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div id="overlay" class="overlay"></div>
+    <div id="drawer" class="drawer" aria-hidden="true">
+      <div class="drawer-head">
+        <strong>Menu</strong>
+        <button id="close-drawer" class="icon-btn" aria-label="Close menu">✕</button>
+      </div>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#cases">Case Studies</a>
+      <a href="#blog">Blog</a>
+      <a href="#about">About</a>
+      <a href="#find-us">Find Us</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> CompuCare Technical Services</div>
+  </footer>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
