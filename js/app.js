@@ -124,12 +124,12 @@ function renderHome() {
         <h1 style="margin-bottom:8px">CompuCare Technical Services</h1>
         <p class="muted" style="font-size:1.05rem;max-width:42rem">Expert repairs and upgrades for laptops, phones, tablets, and more. Honest diagnostics and quality parts to make your tech last.</p>
         <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
-          <a href="#cases" class="btn primary">View Case Studies</a>
-          <a href="#services" class="btn">Services</a>
+          <a href="#services" class="btn primary">Services</a>
+          <a href="#cases" class="btn ">View Case Studies</a>
         </div>
       </div>
       <div style="flex:0 0 420px;min-width:220px">
-        <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=1200&q=80&auto=format&fit=crop" alt="Technician repairing a laptop" style="width:100%;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.15);display:block">
+        <img src="https://st3.depositphotos.com/4218696/16058/i/1600/depositphotos_160581322-stock-photo-electronic-circuit-board-inspecting-close.jpg" alt="Technician inspecting a circuit board" style="width:100%;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.15);display:block">
       </div>
     </section>`;
 

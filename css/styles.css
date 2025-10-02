@@ -87,6 +87,41 @@ header {
   gap: 12px;
   align-items: center;
 }
+
+/* Make navbar links look like buttons for better prominence */
+header .links a {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--bg-soft) 92%, transparent);
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+header .links a:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+}
+/* Ensure the main nav (top primary links) look like buttons too */
+header nav.links.primary a {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--bg-soft) 92%, transparent);
+  color: var(--text);
+}
+header nav.links.primary a:hover,
+header .links a:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+}
+header nav.links.primary a.active {
+  background: var(--accent);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 8px 20px color-mix(in oklab, var(--accent) 35%, transparent);
+}
 .btn {
   padding: 8px 12px;
   border-radius: 10px;
@@ -94,21 +129,116 @@ header {
   background: color-mix(in oklab, var(--bg-soft) 92%, transparent);
   color: var(--text);
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 160ms cubic-bezier(0.2, 0.9, 0.2, 1), box-shadow 160ms,
+    filter 160ms, opacity 120ms;
+  will-change: transform, box-shadow;
 }
 .btn.small {
   padding: 7px 10px;
   font-size: 0.92rem;
 }
 .btn.primary {
-  background: var(--accent);
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--accent) 86%, transparent),
+    var(--accent)
+  );
   border-color: transparent;
   color: #fff;
-  box-shadow: 0 8px 20px color-mix(in oklab, var(--accent) 35%, transparent);
+  box-shadow: 0 10px 24px color-mix(in oklab, var(--accent) 30%, transparent);
 }
 .btn.green {
-  background: var(--accent2);
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--accent2) 86%, transparent),
+    var(--accent2)
+  );
   color: #042;
   border-color: transparent;
+  box-shadow: 0 8px 20px color-mix(in oklab, var(--accent2) 28%, transparent);
+}
+
+/* hover / active / focus interactions for buttons */
+.btn:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.02);
+  opacity: 0.98;
+}
+.btn:active {
+  transform: translateY(0) scale(0.995);
+}
+.btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 6px var(--ring);
+  border-color: transparent;
+}
+
+/* Color changes on hover for clear feedback */
+.btn.primary:hover {
+  /* slightly brighter / lighter gradient on hover */
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--accent) 78%, #ffffff 22%),
+    var(--accent)
+  );
+  box-shadow: 0 14px 36px color-mix(in oklab, var(--accent) 36%, transparent);
+}
+.btn.primary:active {
+  filter: brightness(0.95);
+  transform: translateY(0) scale(0.994);
+}
+
+.btn.green:hover {
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--accent2) 78%, #ffffff 22%),
+    var(--accent2)
+  );
+  box-shadow: 0 12px 30px color-mix(in oklab, var(--accent2) 34%, transparent);
+}
+.btn.green:active {
+  filter: brightness(0.96);
+  transform: translateY(0) scale(0.994);
+}
+
+/* Neutral buttons: subtle color shift on hover */
+.btn:not(.primary):not(.green):hover {
+  background: color-mix(in oklab, var(--bg-soft) 84%, #ffffff 16%);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+/* Make top nav links change to accent color on hover for clear affordance */
+header nav.links.primary a:hover {
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--accent) 82%, #ffffff 18%),
+    var(--accent)
+  );
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 10px 28px color-mix(in oklab, var(--accent) 30%, transparent);
+}
+header nav.links.primary a:active {
+  filter: brightness(0.95);
+  transform: translateY(0) scale(0.995);
+}
+
+.icon-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 8px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: transform 140ms ease, box-shadow 140ms ease;
+}
+.icon-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
 }
 .icon-btn {
   background: transparent;
