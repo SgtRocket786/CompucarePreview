@@ -119,12 +119,17 @@ function initContactForm() {
 
 function renderHome() {
   const hero = `
-    <section class="container">
-      <h1>CompuCare Technical Services</h1>
-      <p class="muted">Expert repairs and upgrades for laptops, phones, tablets, and more.</p>
-      <div style="margin-top:14px">
-        <a href="#cases" class="btn primary">View Case Studies</a>
-        <a href="#services" class="btn">Services</a>
+    <section class="container hero" style="display:flex;gap:24px;align-items:center;flex-wrap:wrap;">
+      <div style="flex:1;min-width:260px">
+        <h1 style="margin-bottom:8px">CompuCare Technical Services</h1>
+        <p class="muted" style="font-size:1.05rem;max-width:42rem">Expert repairs and upgrades for laptops, phones, tablets, and more. Honest diagnostics and quality parts to make your tech last.</p>
+        <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+          <a href="#cases" class="btn primary">View Case Studies</a>
+          <a href="#services" class="btn">Services</a>
+        </div>
+      </div>
+      <div style="flex:0 0 420px;min-width:220px">
+        <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=1200&q=80&auto=format&fit=crop" alt="Technician repairing a laptop" style="width:100%;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.15);display:block">
       </div>
     </section>`;
 
