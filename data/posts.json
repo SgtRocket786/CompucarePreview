@@ -1,1 +1,38 @@
-[{"slug": "holiday-hours", "title": "Holiday Hours", "excerpt": "We\u2019ll be closed on select dates.", "body": "<p>We will be closed on Dec 24\u201326 and Jan 1. Emergency services available via WhatsApp.</p>", "date": "2025-12-01", "tags": ["News"], "category": "News"}, {"slug": "battery-care", "title": "Battery Care 101", "excerpt": "How to prolong your phone and laptop battery life.", "body": "<p>Keep charge between 20\u201380%, avoid extreme temps, and update firmware. Deep discharges shorten lifespan.</p>", "date": "2025-08-20", "tags": ["Tips", "Battery"], "category": "Tips"}, {"slug": "back-to-school", "title": "Back\u2011to\u2011School Tune\u2011Up", "excerpt": "Student special on SSD upgrades and cleaning.", "body": "<p>Students get discounted SSD upgrades and a free internal cleaning during August.</p>", "date": "2025-08-01", "tags": ["Promo", "Students"], "category": "Promotions"}, {"slug": "ssd-vs-hdd", "title": "SSD vs HDD: The Real-World Difference", "excerpt": "What you actually feel when upgrading to SSD.", "body": "<p>Boot times, app launches, and battery life all improve. Even older machines feel fresh with an SSD.</p>", "date": "2025-07-15", "tags": ["Tips", "Storage"], "category": "Tips"}]
+[
+  {
+    "slug": "holiday-hours",
+    "title": "Holiday Hours",
+    "excerpt": "We\u2019ll be closed on select dates.",
+    "body": "<p>We will be closed on Dec 24\u201326 and Jan 1. Emergency services available via WhatsApp.</p>",
+    "date": "2025-12-01",
+    "tags": ["News"],
+    "category": "News"
+  },
+  {
+    "slug": "battery-care",
+    "title": "Battery Care 101",
+    "excerpt": "How to prolong your phone and laptop battery life.",
+    "body": "<p>Keep charge between 20\u201380%, avoid extreme temps, and update firmware. Deep discharges shorten lifespan.</p>",
+    "date": "2025-08-20",
+    "tags": ["Tips", "Battery"],
+    "category": "Tips"
+  },
+  {
+    "slug": "back-to-school",
+    "title": "Back\u2011to\u2011School Tune\u2011Up",
+    "excerpt": "Student special on SSD upgrades and cleaning.",
+    "body": "<p>Students get discounted SSD upgrades and a free internal cleaning during August.</p>",
+    "date": "2025-08-01",
+    "tags": ["Promo", "Students"],
+    "category": "Promotions"
+  },
+  {
+    "slug": "ssd-vs-hdd",
+    "title": "SSD vs HDD: The Real-World Difference",
+    "excerpt": "What you actually feel when upgrading to SSD.",
+    "body": "<p>Boot times, app launches, and battery life all improve. Even older machines feel fresh with an SSD.</p>",
+    "date": "2025-07-15",
+    "tags": ["Tips", "Storage"],
+    "category": "Tips"
+  }
+]
